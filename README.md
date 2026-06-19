@@ -21,7 +21,7 @@ HapFinder is freely available and designed as an extensible platform for current
 
 # Overview
 
-HapFinder was developed to overcome these limitations by providing a unified and platform-agnostic framework for haplotype analysis.
+HapFinder was developed by providing a unified and platform-agnostic framework for haplotype analysis.
 
 Key advantages include:
 
