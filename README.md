@@ -86,5 +86,3 @@ HapFinder can be applied to:
 # License
 
 GPL-3 License
-Email: [xuejiaming@scu.edu.cn](mailto:xuejiaming@scu.edu.cn)
-GitHub: https://github.com/qushengqiu2020
