@@ -1,27 +1,71 @@
 # HapFinder
 
-## Haplotype-Based Genotyping and Analysis for Forensic Genetics
+## A Unified Framework for Haplotype Genotyping of Multivariant Genetic Markers
 
-HapFinder is an open-source R package for microhaplotype genotyping, forensic statistical analysis, DNA mixture interpretation, population frequency estimation, and EuroForMix-compatible data conversion.
+HapFinder is an open-source R framework for haplotype genotyping of multivariant genetic markers from both second- and third-generation sequencing data.
 
-The package supports next-generation sequencing (NGS) data and provides both command-line functions and an interactive Shiny graphical user interface (GUI) for forensic genetic analyses.
+Unlike existing software that primarily focuses on SNP-based microhaplotypes (MHs) from targeted sequencing assays, HapFinder supports a broad spectrum of haplotype markers, including:
+
+- SNP-based Microhaplotypes (MHs)
+- Multi-InDel markers
+- DIP-MHs
+- Custom multivariant marker systems
+
+The framework is compatible with both targeted sequencing panels and untargeted datasets such as whole-genome sequencing (WGS) and whole-exome sequencing (WES), enabling scalable haplotype analysis across diverse forensic and genetic applications.
+
+In addition to haplotype genotyping, HapFinder integrates population frequency estimation, forensic statistical analysis, DNA mixture interpretation workflows, and data export modules compatible with established forensic software such as EuroForMix and Familias.
+
+HapFinder is freely available and designed as an extensible platform for current and emerging haplotype-based forensic genetic analyses.
 
 ---
 
 # Overview
 
-Microhaplotypes are emerging forensic genetic markers with high polymorphism, low mutation rates, and excellent performance for individual identification, kinship analysis, ancestry inference, and mixture deconvolution.
+HapFinder was developed to overcome these limitations by providing a unified and platform-agnostic framework for haplotype analysis.
 
-HapFinder provides a complete workflow for:
+Key advantages include:
 
-* Microhaplotype genotyping from BAM files
-* DNA mixture interpretation
-* Population frequency estimation
-* Forensic parameter calculation
-* EuroForMix-compatible data generation
-* Interactive data analysis through Shiny
+### Broad Marker Support
 
----
+HapFinder supports multiple classes of multivariant genetic markers:
+
+- Microhaplotypes (MHs)
+- Multi-InDels
+- DIP-MHs
+- User-defined multivariant loci
+
+### Multi-Platform Compatibility
+
+Compatible with:
+
+- Illumina sequencing
+- MGI sequencing
+- Oxford Nanopore sequencing
+- Other BAM-based sequencing datasets
+
+### Targeted and Untargeted Data Analysis
+
+Supports:
+
+- Targeted forensic sequencing panels
+- Whole-genome sequencing (WGS)
+- Whole-exome sequencing (WES)
+
+### Integrated Forensic Workflows
+
+Provides downstream tools for:
+
+- Population frequency estimation
+- Forensic parameter calculation
+- DNA mixture interpretation
+- EuroForMix database generation
+- Familias-compatible outputs
+
+### Interactive and Reproducible
+
+- Command-line workflow
+- Shiny graphical interface
+- Open-source and fully reproducible
 
 # Repository Contents
 
@@ -169,22 +213,6 @@ The built-in Shiny GUI supports:
 | toEuroforMixInput             | EuroForMix mixture input generation      |
 | toIndReference                | Individual reference profile generation  |
 | runHapFinder                  | Launch Shiny GUI                         |
-
----
-
-# Applications
-
-HapFinder can be applied to:
-
-* Forensic individual identification
-* DNA mixture interpretation
-* Kinship analysis
-* Population genetic studies
-* Microhaplotype database construction
-* EuroForMix workflows
-* Targeted sequencing panel analysis
-* Next-generation sequencing (NGS) data analysis
-* Forensic research and education
 
 ---
 
